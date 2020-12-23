@@ -1,0 +1,107 @@
+[
+  {
+    "icon": "fa fa-home",
+    "slug": "external",
+    "title": "Volver al inicio",
+    "path": "index.html"
+  }, 
+  { 
+    "id": 1,
+    "icon": "fa fa-file-text-o",
+    "slug": "riesgos",
+    "title": "1. Riesgos eléctricos y mecánicos de motores síncronos de imanes permanentes",
+    "breadcrumb": ["Inicio","Tema 1"],
+    "path": "pages/1-tema.html",    
+    "submenu": [
+      {
+        "icon": "fa fa-file-text-o",
+        "slug": "riesgos",
+        "title": "1.1 Riesgos eléctricos de motores PMM vs motores AM",
+        "anchor": "11"
+      },
+      {
+        "icon": "fa fa-file-text-o",
+        "slug": "riesgos",
+        "title": "1.2 Riesgos mecánicos PMM fondo de motores PMM vs motores AM",
+        "anchor": "12"
+      }
+    ]
+  },
+  { 
+    "id": 1,
+    "icon": "fa fa-file-text-o",
+    "slug": "motor",
+    "title": "2. Motor de imanes permanentes como generador eléctrico",
+    "breadcrumb": ["Inicio","Tema 2"],
+    "path": "pages/2-tema.html",    
+    "submenu": [
+      {
+        "icon": "fa fa-file-text-o",
+        "slug": "motor",
+        "title": "2.1 Generación residual de energía de un motor de magnetos permanentes",
+        "anchor": "21"
+      },
+      {
+        "icon": "fa fa-file-text-o",
+        "slug": "motor",
+        "title": "2.2 Back Spin o giro en reversa de un equipo electro sumergible",
+        "anchor": "22"
+      },
+      {
+        "icon": "fa fa-file-text-o",
+        "slug": "motor",
+        "title": "2.3 Influjo o patada de pozo y sus efectos en la generación",
+        "anchor": "23"
+      },
+      {
+        "icon": "fa fa-file-text-o",
+        "slug": "motor",
+        "title": "2.4 Velocidades de instalación o extracción de tubería",
+        "anchor": "24"
+      }
+    ]
+  }, 
+  { 
+    "id": 1,
+    "icon": "fa fa-file-text-o",
+    "slug": "barreras",
+    "title": "3. Barreras físicas para la protección de generación eléctrica producida por un motor de magnetos permanentes",
+    "breadcrumb": ["Inicio","Tema 3"],
+    "path": "pages/3-tema.html",    
+    "submenu": [
+      {
+        "icon": "fa fa-file-text-o",
+        "slug": "barreras",
+        "title": "3.1 Barreras de superficie",
+        "anchor": "31"
+      },{
+        "icon": "fa fa-file-text-o",
+        "slug": "barreras",
+        "title": "3.2 Barreras de fondo",
+        "anchor": "32"
+      }
+    ]
+  }, 
+  { 
+    "id": 1,
+    "icon": "fa fa-file-text-o",
+    "slug": "ventajas",
+    "title": "4. Ventajas de un motor PMM",
+    "breadcrumb": ["Inicio","Tema 4"],
+    "path": "pages/4-tema.html",    
+    "submenu": [
+      {
+        "icon": "fa fa-file-text-o",
+        "slug": "ventajas",
+        "title": "4.1 Cálculo de consumo eléctrico de un motor de magnetos permanentes",
+        "anchor": "41"
+      },
+      {
+        "icon": "fa fa-file-text-o",
+        "slug": "ventajas",
+        "title": "4.2 Toma de medidas eléctricas de un motor sincrónico",
+        "anchor": "42"
+      }
+    ]
+  }
+]

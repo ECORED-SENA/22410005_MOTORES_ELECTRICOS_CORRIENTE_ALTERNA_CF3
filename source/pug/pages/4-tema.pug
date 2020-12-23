@@ -1,0 +1,171 @@
+.container
+    .header-ecored
+        h1 4. Ventajas de un motor PMM
+    .jumbotron.bg-white
+        img.img-a(src="assets/images/pages/ilustraciones/img26.png").img-fluid
+
+        .sub-ecored.mt-5#41
+            h2 4.1 Cálculo de consumo eléctrico de un motor de magnetos permanentes.  
+        p.mt-5 Los motores de magnetos permanentes son considerados motores síncronos dado que su deslizamiento o pérdidas son casi nulas. En otras palabras, la velocidad del campo magnético es igual a la velocidad de rotación del eje del motor:     
+
+        .jumbotron.mt-5
+            .row.justify-content-center.align-items-center         
+                .col-12.col-md-6
+                    img.img-a(src="assets/images/pages/ilustraciones/img27.png").img-fluid
+                .col-12.col-md-6
+                    p nsync = velocidad del campo magnético.
+                    p nm = velocidad mecánica del eje del motor.
+                    p S = Deslizamiento
+
+                    p Donde:  Si el rotor corre a velocidad sincrónica S=0 y si el rotor está estacionario S=1.
+
+        p.mt-5 Muchos circuitos de corriente alterna no son una carga puramente resistiva. Si este es el caso, el poder aparente y el poder real no serán el mismo. La relación de los dos es el factor de potencia (PF): 
+        img.img-a.mt-5(src="assets/images/pages/ilustraciones/img28.png").img-fluid
+                
+        .row.justify-content-center.align-items-center.mt-5
+            .col-auto
+                img.img-a(src="assets/images/pages/ilustraciones/img29.png").img-fluid
+            .col
+                p En el motor de inducción, utilizamos energía eléctrica para inducir un campo magnético en el estator. No toda esta energía se utiliza para generar caballos de fuerza en el eje.
+
+                p La energía que no se convierte en Hp o calor (debido a pérdidas mecánicas y eléctricas) se devuelve al sistema eléctrico de superficie. Esta energía es considerada no útil para el sistema.
+
+                p En el caso de motores de inducción mucha de la energía consumida en superficie no es transformada en trabajo y se convierte en pérdidas, situación que se ve reflejada en un factor de potencia más bajo, donde 1 es el ideal.
+        p.mt-5 La forma en la cual en la industria calculamos el consumo eléctrico de los motores en superficie consiste en medir las siguientes propiedades eléctricas del sistema:
+
+        .jumbotron.bg-6.mt-5
+            .row.justify-content-center.align-items-center
+                .col-12.col-md-6
+                    p Las velocidades de corrida de un equipo electrosumergible varían mucho dependiendo de las siguientes características:
+                    .list.mt-4
+                        .list__item
+                            .list__item__icon
+                                img.img-a(src="assets/images/pages/ilustraciones/v1.svg").img-fluid  
+                        .list__txt    
+                            p.m-top Voltaje.
+                    .list
+                        .list__item
+                            .list__item__icon
+                                img.img-a(src="assets/images/pages/ilustraciones/v1.svg").img-fluid  
+                        .list__txt    
+                            p.m-top Corriente.
+                    .list
+                        .list__item
+                            .list__item__icon
+                                img.img-a(src="assets/images/pages/ilustraciones/v1.svg").img-fluid  
+                        .list__txt    
+                            p.m-top Factor de potencia.
+                    .list
+                        .list__item
+                            .list__item__icon
+                                img.img-a(src="assets/images/pages/ilustraciones/v1.svg").img-fluid  
+                        .list__txt    
+                            p.m-top Nivel de Armonicos en voltaje y corriente.
+                    img.img-a.mt-5(src="assets/images/pages/ilustraciones/img30.png").img-fluid
+                    p.mt-5 En motores de Imanes permanentes la energía entregada en superficie es prácticamente consumida en su totalidad, por lo que los valores de factor de potencia (PF) son muy cercanos a uno (1). Ahora otro valor importante será determinar su eficiencia, la cual medirá cuánto de esa energía será convertida en trabajo.
+                .col-12.col-md-6
+                    img.img-a(src="assets/images/pages/ilustraciones/img31.png").img-fluid
+
+        .row.justify-content-center.align-items-center.mt-5
+            .col-12.col-md-6
+                p Diversas pruebas de laboratorio se han realizado a lo largo del mundo para determinar las diferencia en consumo eléctrico entre un motor (PMM) y otro(IM). Estos resultados en algunos casos varían significativamente, pero en la gran mayoría se estiman en rangos muy similares. A continuación un ejemplo de un estudio realizado en Colombia:
+            .col-12.col-md-6
+                img.img-a(src="assets/images/pages/ilustraciones/img32.png").img-fluid
+
+        .row.justify-content-center.align-items-center.mt-5
+            .col-12.col-md-6
+                img.img-a(src="assets/images/pages/ilustraciones/img33.png").img-fluid        
+            .col-12.col-md-6
+                p En la gráfica superior se pueden evidenciar los valores arrojados de factores de potencia para los dos tipos de motores, IM (Barras marrones) y PMM (Barras amarillas), donde se evidencia la gran diferencia entre uno y otro. El motor de PMM demuestra que su deslizamiento es prácticamente cero.
+        p.mt-5 En la figura ilustrativa 18 se puede evidenciar la gran diferencia en consumo de energía en KVA de un motor de imán permanente (barras amarillas)  comparado con un motor de inducción (barras cafe) . Existen ahorros a bajas cargas de hasta un 47% en reducción de consumo de energía en KVA.
+
+        .sub-ecored.mt-5#42
+            h2 4.2 Toma de medidas eléctricas de un motor sincrónico.        
+        img.img-a.mt-5(src="assets/images/pages/ilustraciones/img34.png").img-fluid    
+
+        .row.my-5   
+            .col-auto   
+                .media_link            
+                    .media_link__icon.icon--lg
+                        img(src="assets/images/pages/ilustraciones/medialink.svg", alt="")
+                    .media_link__txt
+                        h3.danger.text-center #[strong Importante]
+                        .hr-ecored                    
+                        p Los trabajos con motores eléctricos de imanes permanentes son considerados trabajos de línea viva, debido al riesgo eléctrico asociado. Por tal razón las siguientes medidas de prevención y mitigación deben tomarse para evitar incidentes/accidentes:             
+        .header-arrow.py-4.mt-5
+            h3 Elementos de protección personal (EPP):
+        .row.justify-content-center.align-items-center.mt-5
+            .col-10
+                .list
+                    .list__item
+                        .list__item__icon
+                            img.img-a(src="assets/images/pages/ilustraciones/v1.svg").img-fluid  
+                    .list__txt    
+                        p.m-top Casco dieléctrico clase E tipo I
+                .list
+                    .list__item
+                        .list__item__icon
+                            img.img-a(src="assets/images/pages/ilustraciones/v1.svg").img-fluid  
+                    .list__txt    
+                        p.m-top Gafas de seguridad que cumplan con la norma ANSI Z87.1
+                .list
+                    .list__item
+                        .list__item__icon
+                            img.img-a(src="assets/images/pages/ilustraciones/v1.svg").img-fluid  
+                    .list__txt    
+                        p.m-top Traje de cuerpo completo retardante de fuego (Overol) (8 cal/cm2)
+                .list
+                    .list__item
+                        .list__item__icon
+                            img.img-a(src="assets/images/pages/ilustraciones/v1.svg").img-fluid  
+                    .list__txt    
+                        p.m-top Botas dieléctricas
+                .list
+                    .list__item
+                        .list__item__icon
+                            img.img-a(src="assets/images/pages/ilustraciones/v1.svg").img-fluid  
+                    .list__txt    
+                        p.m-top Guantes de lona, vaqueta y nitrilo.
+                .list
+                    .list__item
+                        .list__item__icon
+                            img.img-a(src="assets/images/pages/ilustraciones/v1.svg").img-fluid  
+                    .list__txt    
+                        p.m-top Tapa oídos tipo inserción.
+                .list
+                    .list__item
+                        .list__item__icon
+                            img.img-a(src="assets/images/pages/ilustraciones/v1.svg").img-fluid  
+                    .list__txt    
+                        p.m-top Traje impermeable de dos piezas.
+                        
+                .list
+                    .list__item
+                        .list__item__icon
+                            img.img-a(src="assets/images/pages/ilustraciones/v1.svg").img-fluid  
+                    .list__txt    
+                        p.m-top Botas de caucho con punteras de seguridad.
+                .list
+                    .list__item
+                        .list__item__icon
+                            img.img-a(src="assets/images/pages/ilustraciones/v1.svg").img-fluid  
+                    .list__txt    
+                        p.m-top Guantes dieléctricos categoría 2 (17.5K V) para medidas eléctricas con su respectiva protección mecánica.
+                .list
+                    .list__item
+                        .list__item__icon
+                            img.img-a(src="assets/images/pages/ilustraciones/v1.svg").img-fluid  
+                    .list__txt    
+                        p.m-top Guantes Dieléctricos Categoría 1 (7.5K V) para realización de empalmes, terminación de conectores de superficie y packer. Cualquier manipulación de cable donde exista riesgo de contacto con el conductor del cable/MLE.
+                .list
+                    .list__item
+                        .list__item__icon
+                            img.img-a(src="assets/images/pages/ilustraciones/v1.svg").img-fluid  
+                    .list__txt    
+                        p.m-top Careta Arc Flash (CAT 2).
+                .list
+                    .list__item
+                        .list__item__icon
+                            img.img-a(src="assets/images/pages/ilustraciones/v1.svg").img-fluid  
+                    .list__txt    
+                        p.m-top Estiba plastica para toma de medidas eléctricas.
