@@ -1,0 +1,1689 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Principios de funcionamientos y diferencias AM - PMM</title>
+        <meta meta name="description" content="Los motores asíncronos o de inducción son un tipo de motor de corriente alterna en el que la corriente eléctrica del rotor necesaria para producir torsión es inducida por inducción electromagnética del campo magnético de la bobina del estator. Por lo tanto un motor de inducción no requiere una conmutación mecánica aparte de su misma excitación o para todo o parte de la energía transferida del estator al rotor, como en los motores universales, motores DC y motores grandes síncronos. (Motor de inducción, 2016).">
+        <link rel="icon" type="image/svg+xml" href="assets/images/logos/senaLogo.svg">
+        <link rel="stylesheet" href="assets/fonts/feather/feather.css">
+        <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.css">
+        <link href="assets/css/fancybox.css" rel="stylesheet">
+        <link href="assets/css/animate.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body class="theme-dark page-header-textura" id="page-home">
+        <header class="curso-presentacion page-header" id="CursoPresentacion">
+            <div class="page-textura">
+                <div class="container">
+                    <div class="curso-topbar justify-content-center justify-content-md-between"><a class="curso-topbar__logo"><svg xmlns="http://www.w3.org/2000/svg" width="168.273" height="164.177" viewBox="0 0 168.273 164.177">
+                                <path id="SENA_LOGO" data-name="SENA LOGO" d="M85.349,1a18.09,18.09,0,1,0,18.09,18.09h0A18.1,18.1,0,0,0,85.349,1ZM25.617,42.983a33.722,33.722,0,0,0-9.386,1.024,11.156,11.156,0,0,0-5.12,2.56A5.346,5.346,0,0,0,10.086,52.2c.683,1.707,2.56,2.9,4.608,3.584,4.437,1.536,9.386,1.877,13.994,2.731a5.1,5.1,0,0,1,2.389,1.024,1.369,1.369,0,0,1-.683,2.048,9.146,9.146,0,0,1-5.291.683A8.354,8.354,0,0,1,20.5,61.244a1.962,1.962,0,0,1-.853-2.389H9.233A7.663,7.663,0,0,0,10.6,63.463a7.59,7.59,0,0,0,4.267,2.389A28.541,28.541,0,0,0,23.4,66.876,52.426,52.426,0,0,0,35,66.023a11.043,11.043,0,0,0,5.8-2.9,5.358,5.358,0,0,0-1.365-8.533,21.267,21.267,0,0,0-5.8-2.048c-3.072-.683-5.973-1.024-9.045-1.536a9.114,9.114,0,0,1-3.072-.853,1.226,1.226,0,0,1,0-2.219,9.369,9.369,0,0,1,4.437-.683,10.554,10.554,0,0,1,4.608.853A1.877,1.877,0,0,1,31.59,49.81h9.9a5.669,5.669,0,0,0-1.195-3.584A8.875,8.875,0,0,0,35.515,43.5c-3.584-.341-6.827-.512-9.9-.512Zm21.333.683V67.217H75.792V62.1H57.531V57.489H73.744V52.54H57.531V48.786H75.109v-5.12Zm47.615,0H81.253V67.217H91.322V51.346l13.824,15.872h13.824V43.666H108.9v15.7Zm42.495,0L120.676,67.217h10.581l2.56-4.267H150.2l2.389,4.267h11.776l-15.53-23.551ZM142.35,49.3l5.12,8.533h-10.41ZM.7,74.044l.171,12.8L49,86.673c2.389.512,3.925,2.048,3.413,5.8l-29.7,51.711,9.557,9.045L78.01,74.044Zm91.646,0L137.4,152.89l9.9-8.874L117.433,92.3c-.512-3.584.853-5.291,3.413-5.8l48.127.171V74.044ZM84.837,87.185,42.512,159.546l11.264,5.461,28.159-47.615a4.283,4.283,0,0,1,2.9-1.195,4.681,4.681,0,0,1,3.072,1.195l28.159,47.786,11.605-5.973Z" transform="translate(-0.7 -1)" fill="#FF6B00" />
+                            </svg>
+                        </a><a class="curso-topbar__menubar collapsed btn-menu-responsive d-none" data-toggle="collapse" href="#curso-topbar__nav" aria-expanded="false"><span></span><span></span><span></span></a>
+                        <nav class="curso-topbar__nav collapse show d-none d-md-block" id="curso-topbar__nav">
+                            <ul class="curso-topbar__list">
+                                <li class="curso-topbar__item"><a class="curso-topbar__link" href="#ResultadosAprendizaje"><span class="text-white">Resultados de aprendizaje</span></a></li>
+                                <li class="curso-topbar__item"><a class="curso-topbar__link" href="#IndiceTematico"><span class="text-white">Contenidos</span></a></li>
+                                <li class="curso-topbar__item"><a class="curso-topbar__link" href="#Creditos"><span class="text-white">Créditos</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="curso-portada">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg-6">
+                                <h3 class="curso-subtitulo" id="curso-titulo-componente">Aplicación de fundamentos en tecnología de motores eléctricos de corriente alterna, sincrónicos de imanes permanentes.</h3>
+                                <h1 class="curso-titulo" id="curso-titulo-tema">Principios de funcionamientos y diferencias AM - PMM</h1>
+                                <div class="brand-line-primary"></div>
+                                <p class="curso-descripcion">Los motores asíncronos o de inducción son un tipo de motor de corriente alterna en el que la corriente eléctrica del rotor necesaria para producir torsión es inducida por inducción electromagnética del campo magnético de la bobina del estator. Por lo tanto un motor de inducción no requiere una conmutación mecánica aparte de su misma excitación o para todo o parte de la energía transferida del estator al rotor, como en los motores universales, motores DC y motores grandes síncronos. (Motor de inducción, 2016).</p>
+                            </div>
+                            <div class="col-12 col-lg-6 text-center">
+                                <div class="d-none d-lg-block"><img class="curso-imagen" src="assets/images/header/header_media.svg" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="curso-resultados section bg-base-light" id="ResultadosAprendizaje">
+            <div class="container">
+                <h2> Resultados de <br>aprendizaje</h2>
+                <div class="brand-line-primary"></div>
+                <div class="card resultado-item">
+                    <div class="card-body">
+                        <ul class="bg-color-dark">
+                            <li> <span>22410005 - 02 - Determinar el principio de funcionamiento de los motores de corriente alterna sincrónicos de imanes permanentes, según especificaciones de construcción del fabricante. </span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="curso-indice-tematico section" id="IndiceTematico">
+            <div class="container">
+                <h2>Desarrollo de <br>contenidos</h2>
+                <div class="brand-line-primary"></div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-10">
+                        <div class="card wow flipInX" data-wow-delay=".4s">
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush list my-n3 nav-temas">
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold"> <i class="fa fa-file-text-o"></i></span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#intro">Introducción</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#intro">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">1</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-1">Principio de funcionamiento de un motor de inducción</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-1">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">2</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-2">Principio de funcionamiento de un motor de imanes permanentes</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-2">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">3</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-3">Diferencia entre motor inducción (AM) - iman permanente (PMM)</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-3">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">4</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-4">Variador de velocidad (VSD) - Controles para motor PMM</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-4">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold"> <i class="fa fa-sort-alpha-asc"></i></span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#glosario">Glosario</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#glosario">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold"> <i class="fa fa-folder-open"></i></span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#anexos">Material complementario</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#anexos">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold"> <i class="fa fa-folder-open"></i></span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#anexos">Material complementario</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#anexos">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold"> <i class="fa fa-book"></i></span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#referencias">Referencias bibliográficas</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#referencias">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="mainContent">
+            <div id="intro">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Introducción</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/0HsZYxICQN4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""> </iframe></div>
+                        <p class="mt-5">Los motores de inducción son también llamados asíncronos, debido a que el motor siempre gira a menor velocidad que la velocidad de rotación del campo magnético en el estator, a esta diferencia de velocidad se le denomina deslizamiento y se mide en términos porcentuales.</p>
+                        <p>Hay dos tipos de motores de inducción clasificados de acuerdo al tipo de rotor como, motor con rotor jaula de ardilla y motor con rotor devanado.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-1">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>1. Principio de funcionamiento de un motor de inducción </h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <p>Cerca del 50% del consumo de energía global es generada por motores de inducción dado que son simples, resistentes, económicos y fáciles de mantener. El propósito de un motor es transformar la energía eléctrica en energía mecánica o movimiento capaz de realizar un trabajo, por ejemplo, el giro de un eje. El motor de inducción tiene dos partes principales, el estator que es la parte fija del motor y el rotor que es la parte giratoria. Estos se encuentran separados por un espacio de aire que permite el giro del rotor, el cual también es llamado entrehierro.</p>
+                        <p>Básicamente el estator está compuesto por un conjunto de láminas metálicas, un devanado de 3 bobinas y una entrada de alimentación de voltaje AC trifásico.</p>
+                        <p>Los motores de inducción son también llamados asíncronos, debido a que el motor siempre gira a menor velocidad que la velocidad de rotación del campo magnético en el estator, a esta diferencia de velocidad se le denomina deslizamiento y se mide en términos porcentuales.</p>
+                        <p>Hay dos tipos de motores de inducción clasificados de acuerdo al tipo de rotor como, motor con rotor jaula de ardilla y motor con rotor devanado.</p>
+                        <div class="sub-ecored mt-5" id="11">
+                            <h2>1.1 Características del devanado del motor - campo magnético y movimiento mecánico. </h2>
+                        </div><img class="img-a mt-5 img-fluid" src="assets/images/pages/ilustraciones/img1.png">
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col">
+                                <p>Las 3 bobinas del devanado del estator están conectadas a un punto estrella y separadas espacialmente a 120° una de la otra, pasando a través de los espacios del estator formados por delgadas láminas de acero apiladas y ubicadas dentro de la estructura de acero o hierro que contiene los componentes del motor.</p>
+                                <p>Cuando una corriente trifásica pasa a través del devanado del estator, se produce un campo magnético giratorio el cual genera la rotación del rotor que se encuentra ubicado en el centro de las bobinas. La frecuencia de giro del campo magnético será igual a la de la corriente alterna con la que se alimente el motor.</p>
+                                <p>Teóricamente cuando pasa corriente a través de un conductor, se produce un campo magnético alrededor de este. </p>
+                            </div>
+                            <div class="col-auto"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img2.png"></div>
+                        </div>
+                        <div class="jumbotron mt-5">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-auto"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img3.png"></div>
+                                <div class="col">
+                                    <p>Cuando la corriente pasa a través de un sistema trifásico el campo magnético producido se refleja en la imagen</p>
+                                    <p>Debido a las variaciones de la corriente AC en el sistema trifásico, el campo magnético generado gira en diferentes direcciones de tal manera que se genera una fuerza uniforme rotativa. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quote mt-5">
+                            <div class="quote__bar">
+                                <div class="quote__bar__icon"><img class="img-icon" src="assets/images/pages/ilustraciones/comilla1.svg" alt=""></div>
+                                <div class="quote__bar__hr"></div>
+                            </div>
+                            <div class="quote__text">
+                                <p class="mb-0">De acuerdo a la ley de Faraday, si se ubica un conductor cerrado en el centro del campo magnético, se genera una fuerza electromotriz que produce una corriente a través del circuito. Con el circuito cargado dentro del campo magnético, se crea una fuerza magnética haciendo que el circuito empiece a rotar.</p>
+                                <section class="my-4"><a class="media-link bg-color-verde-radial" href="https://www.youtube.com/watch?app=desktop&amp;v=AQqyGNOP_3o" target="_blank"> <img class="media-link-icon" src="assets/images/pages/ilustraciones/enlace.svg" alt="">
+                                        <div class="media-link-title ml-4">
+                                            <p>Vídeo en YouTube ¿Cómo funciona un motor de inducción? </p>
+                                        </div>
+                                    </a></section>
+                            </div>
+                            <div class="quote__bar">
+                                <div class="quote__bar__hr"></div>
+                                <div class="quote__bar__icon"><img class="img-icon" src="assets/images/pages/ilustraciones/comilla2.svg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="sub-ecored mt-5" id="12">
+                            <h2>1.2 Motores Jaula de ardilla </h2>
+                        </div>
+                        <div class="header-arrow my-5 py-4">
+                            <h3>El rotor de un motor de inducción</h3>
+                        </div>
+                        <p>Se compone de laminaciones ranuradas. Estas están apiladas cuidadosamente para crear una serie de ranuras para el devanado de motor. Existen dos tipos de devanado de rotor: (1) Devanados trifásicos convencionales hechos de alambre aislado y (2) Devanados de Jaula de Ardilla. </p><img class="img-a mt-5 img-fluid" src="assets/images/pages/ilustraciones/img4.png">
+                        <div class="header-arrow my-5 py-4">
+                            <h3>Un rotor devanado</h3>
+                        </div>
+                        <p>tiene un devanado trifásico similar al del estator, el cual está distribuido uniformemente en las ranuras y normalmente está conectado en Y (estrella) con tres conductores. Los terminales están conectados a tres anillos colectores, los cuales giran junto con el rotor. </p><img class="img-a mt-5 img-fluid" src="assets/images/pages/ilustraciones/img5.png">
+                        <div class="header-arrow my-5 py-4">
+                            <h3>Rotor Jaula de Ardilla </h3>
+                        </div>
+                        <p>En un motor de inducción con rotor Jaula de Ardilla el rotor tiene barras conductoras incrustadas en los espacios formados por las laminaciones del rotor, las cuales se conectan entre sí en sus extremos utilizando anillos que también son conductores. La corriente pasa por las barras generando un campo magnético rotativo que crea la fuerza magnética que hace girar el rotor. </p><img class="img-a mt-5 img-fluid" src="assets/images/pages/ilustraciones/img6.png">
+                        <div class="header-arrow my-5 py-4">
+                            <h3>Laminaciones de rotor Jaula de Ardilla</h3>
+                        </div>
+                        <p>La electricidad es inducida por el estator por inducción magnética y no por una conexión eléctrica directa, por lo que este tipo de motores recibe el nombre de Motor de Inducción. Las delgadas láminas con núcleo de hierro son empacadas dentro del rotor para evitar al máximo la pérdida de corriente. </p><img class="img-a mt-5 img-fluid" src="assets/images/pages/ilustraciones/img7.png">
+                        <div class="sub-ecored mt-5" id="13">
+                            <h2>1.3 Generalidades</h2>
+                        </div>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col">
+                                <p>Un motor de inducción se compone de dos partes principales, el estator que es la parte estática y el rotor que es la parte giratoria. Estos se encuentran separados por un espacio de aire conocido como entrehierro, que es necesario para evitar la fricción entre los dos componentes y se llena de aceite para lubricar los rodamientos y remover el calentamiento generado por la pérdida de energía.</p>
+                                <p>En ambos tipos de motor, de rotor devanado y de rotor jaula de ardilla, la velocidad de giro del campo magnético se conoce como Velocidad de Sincronismo (NS) y se calcula a partir de la frecuencia de la fuente de voltaje (Hertz) y el número de polos en el campo magnético del motor con la siguiente fórmula:</p>
+                            </div>
+                            <div class="col-auto"><img class="img-a mt-5 img-fluid" src="assets/images/pages/ilustraciones/img8.png"><img class="img-a mt-5 img-fluid" src="assets/images/pages/ilustraciones/img9.png"></div>
+                        </div>
+                        <hr>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col-auto"><img class="img-a mt-5 img-fluid" src="assets/images/pages/ilustraciones/img10.png"></div>
+                            <div class="col">
+                                <p>La diferencia entre la velocidad del campo magnético y la velocidad del rotor (NR) se conoce como deslizamiento (Slip), el cual se calcula con la siguiente fórmula: </p><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img11.png">
+                                <p>El deslizamiento es prácticamente cero sin carga y es igual a uno (100%) cuando el rotor está bloqueado.</p>
+                            </div>
+                        </div>
+                        <p class="mt-5">Otro concepto importante para analizar el comportamiento de los motores de inducción es el factor de potencia, el cual representa la relación que existe entre la potencia real de trabajo y la potencia total consumida por la carga o el consumidor conectado a un circuito eléctrico de corriente alterna. Como la potencia activa o real de trabajo nunca puede exceder la potencia aparente o consumida por la carga, se deduce que el factor de potencia nunca puede ser mayor a uno o 100%. Si el factor de potencia es menor que “1”, dicho número representará el desface entre la intensidad de la corriente eléctrica y la tensión o voltaje en el circuito de corriente alterna.</p>
+                        <div class="jumbotron mt-5">
+                            <p>Si el factor de potencia es cercano a “1”, esto indica un mejor aprovechamiento del consumo de energía eléctrica, es decir que habría menos pérdida de energía y una mayor eficiencia de trabajo en los generadores que producen esa energía. </p>
+                            <p>La eficiencia de un motor se define como la relación entre la potencia útil de salida y la potencia de entrada total y generalmente se expresa en porcentaje.</p>
+                        </div>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col-auto"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img12.png"></div>
+                            <div class="col">
+                                <p>Generalmente cuando una máquina transforma energía de una forma a otra siempre hay una pérdida. Esta pérdida ocurre en la misma máquina y provoca un incremento de temperatura y una reducción de la eficiencia. </p>
+                            </div>
+                        </div>
+                        <div class="sub-ecored-teme mt-5">
+                            <h3>Aplicaciones para los Sistemas de Levantamiento Artificial</h3>
+                        </div>
+                        <p class="mt-5">Como se mencionó previamente, el propósito del motor es convertir energía eléctrica en movimiento para mover un eje. Este eje es conectado a los demás componentes del sistema de levantamiento artificial para llevar el fluido de pozo a superficie.</p>
+                        <p>En aplicaciones de sistemas de levantamiento artificial, por ejemplo, Bombas electrosumergibles, los motores son de inducción, de dos polos, trifásico, tipo Jaula de Ardilla. </p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img13.png">
+                        <p>En un motor de inducción en superficie, el tamaño es proporcional a la potencia requerida, a mayor potencia mayor tamaño. Sin embargo, para aplicaciones petroleras debido a las restricciones de espacio en el completamiento de los pozos, para obtener la potencia requerida, el diámetro y la longitud del motor varían.</p>
+                        <p>Al ser asíncronos, estos motores giran por debajo de las 3.600 rpm en sistemas de 60 Hertz de tal manera que el deslizamiento oscila entre los 100 y 150 rpm, es decir, la rotación normal será alrededor de 3.500 rpm. El diseño y voltaje de operación de los motores puede ser menor a 230 voltios o mayor a 7.000 voltios. El amperaje requerido puede estar entre 12 y 343 amperios.</p>
+                        <p>Para estas aplicaciones, la eficiencia del motor de inducción dependerá de la carga de trabajo de este, así, a mayor carga, se alcanzará la máxima eficiencia.</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img14.png">
+                        <p>Como todos los motores, los motores de inducción para sistemas de levantamiento son sensibles a las temperaturas de operación y su vida útil se reducirá si el equipo funciona a temperaturas mayores a las especificaciones de diseño. Esto se debe a que los motores contienen gran número de materiales (metales, plásticos, compuestos, etc), los cuales tienen su máximo límite de temperatura donde sus propiedades mecánicas y eléctricas se pierden, de tal manera que la máxima temperatura del motor es el mínimo de los límites de todos los materiales en el motor.</p><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img15.png">
+                    </div>
+                </div>
+            </div>
+            <div id="tema-2">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>2. Principio de funcionamiento de un motor de imanes permanentes</h1>
+                    </div>
+                    <div class="jumbotron bg-white"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img16.png">
+                        <div class="sub-ecored mt-5" id="21">
+                            <h2>2.1 Características y tipos de los rotores</h2>
+                        </div>
+                        <p class="mt-5">Normalmente, en un motor eléctrico el rotor está ubicado dentro del estator, sin embargo, para los motores de imanes permanentes hay estructuras con rotores externos. </p><img class="img-a mt-5 img-fluid" src="assets/images/pages/ilustraciones/img17.png">
+                        <p class="mt-5">De acuerdo con el diseño del rotor, los motores sincrónicos están divididos en: Motor síncrono de imanes permanentes de superficie y de imanes incrustados.</p><img class="img-a mt-5 img-fluid" src="assets/images/pages/ilustraciones/img18.png">
+                        <p class="mt-5">En los rotores con imanes en superficie (SPM), los imanes son mantenidos en posición por una cinta compuesta que los envuelve alrededor del rotor. Este tipo de motor es utilizado en un amplio rango de aplicaciones cuando se requieren altas eficiencias y alta velocidad. Este diseño es altamente eficiente debido a que el torque es generado directamente por la reacción entre el campo magnético de la superficie de los imanes y los campos generados por el devanado en el estator. De igual manera hay pérdidas mínimas de energía en el rotor, debido a que el campo magnético de los imanes actúa directamente en el entrehierro.</p>
+                        <p>Las principales desventajas de los motores SPM son la cantidad de material magnético requerida para generar el torque comparado con otros tipos de motor y los altos costos de manufactura.</p>
+                        <p>Por otro lado, en los rotores con imanes incrustados (IPM), barras de imanes se encuentran incrustadas en los agujeros del rotor, el cual está fabricado por capas de láminas de acero. Los motores IPM usualmente se fabrican con menos material magnético que los SPM, lo que permite reducir los costos de manufactura. Adicional al campo magnético generado por los imanes permanentes, los IPM también utilizan la reluctancia del rotor para mejorar la intensidad del campo magnético. Si bien esto mejora la relación de torque-material magnético, se reduce el pico de eficiencia comparado con un SPM.</p>
+                        <div class="jumbotron mt-5">
+                            <p>Los videos que se mencionan a continuación describen gráficamente la composición interna de los tipos más comunes de motores permanentes y así mismo un ejemplo de aplicación del fabricante Skoda. </p>
+                            <div class="row justify-content-center align-items-center mt-5">
+                                <div class="col-12 col-md-6">
+                                    <section><a class="media-link bg-color-verde-radial" href="https://www.youtube.com/watch?app=desktop&amp;v=E5VS4s-R7vk" target="_blank"> <img class="media-link-icon" src="assets/images/pages/ilustraciones/enlace.svg" alt="">
+                                            <div class="media-link-title ml-4">
+                                                <p>Vídeo 1 simulación de montaje y despiece de motores </p>
+                                            </div>
+                                        </a></section>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <section><a class="media-link bg-color-verde-radial" href="https://www.youtube.com/watch?app=desktop&amp;v=NRxo5aDGG8M" target="_blank"> <img class="media-link-icon" src="assets/images/pages/ilustraciones/enlace.svg" alt="">
+                                            <div class="media-link-title ml-4">
+                                                <p>Vídeo 2 simulación de montaje y despiece de motores </p>
+                                            </div>
+                                        </a></section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-ecored mt-5" id="22">
+                            <h2>2.2 Partes eléctricas y componentes </h2>
+                        </div>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col-auto"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img19.png"></div>
+                            <div class="col">
+                                <p>El motor de imanes permanentes tiene dos partes principales, el estator que es la parte fija y el rotor que particularmente tiene imanes compuestos por elementos como el disprosio, el gadolinio o el neodimio, elementos, en su mayoría, importados de China, escasos, caros y difíciles de reciclar. Gracias a estos imanes, la inducción no es necesaria para generar el campo magnético o la producción de corriente. </p>
+                                <p>En la imagen se observa:</p>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Bar wound Wire: Devanado del estator</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Rotor core sections: Núcleo del rotor conformado por laminaciones de acero</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Bearing support Assembly: Conjunto de cojinetes</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Magnets: Imanes</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Steel plate: Placa de acero</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Rotor hub: Buje del rotor</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Stator core: Núcleo del estator conformado por laminaciones de acero</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-ecored mt-5" id="23">
+                            <h2>2.3 Generalidades</h2>
+                        </div>
+                        <p class="mt-5">Los motores sincrónicos son clasificados como máquinas de alta velocidad cuando las RPM>500, y máquinas de baja velocidad cuando las RPM<500. En ciertas aplicaciones, los motores sincrónicos son preferidos sobre los motores de inducción tipo jaula de ardilla por las siguientes razones: </p>
+                                <div class="row justify-content-center align-items-center mt-5">
+                                    <div class="col-12 col-md-4"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img20.png"></div>
+                                    <div class="col-12 col-md-4"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img21.png"></div>
+                                    <div class="col-12 col-md-4"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img22.png"></div>
+                                </div>
+                                <div class="row justify-content-center align-items-center mt-5">
+                                    <div class="col-12 col-md-4"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img23.png"></div>
+                                    <div class="col-12 col-md-4"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img24.png"></div>
+                                </div>
+                                <p class="mt-5">Los sistemas de levantamiento artificial para el sector petrolero han sido usados por más de 80 años, principalmente operados con motores de inducción. Los proveedores de estos sistemas continuamente desarrollan nuevas y mejores tecnologías para cumplir con los desafíos de los operadores. La tecnología PMM es relativamente nueva en las operaciones occidentales. Algunos proveedores de equipos ESP reportan que los PMM pueden proveer ahorros de energía significativos del 20 al 30% sobre el motor de inducción.</p>
+                                <p>Este tipo de motores están indicados para prácticamente cualquier aplicación en la que se emplee un motor de inducción y en situaciones en las que el rendimiento del motor sea un factor de importancia primaria, así como en aplicaciones de velocidad variable con cargas centrífugas como las de los ventiladores y las bombas.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-3">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>3. Diferencia entre motor inducción (AM) - iman permanente (PMM)</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="sub-ecored mt-5" id="31">
+                            <h2>3.1 Características del conjunto rotórico </h2>
+                        </div><img class="img-a mt-5 img-fluid" src="assets/images/pages/ilustraciones/img25.png">
+                        <p class="mt-5">En aplicaciones de la industria petrolera, se conoce como conjunto rotórico a los elementos que conforman el sistema de levantamiento artificial. Parte fundamental es el motor, cuya función principal es transformar energía eléctrica en movimiento de un eje y así transmitir el movimiento a lo largo de todos los ejes que conforman el equipo y lograr llevar los hidrocarburos a superficie.</p>
+                        <p>Los sistemas de levantamiento que usan motores de inducción o motores PMM más comunes son Sistemas de bombeo Electrosumergible y sistemas de bombeo por cavidades progresivas</p>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col-auto"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img26.png"></div>
+                            <div class="col">
+                                <p>Los sistemas de bombeo electrosumergible (ESP) ofrecen un medio eficaz y económico de levantamiento de grandes cantidades de fluido y caudales desde 200 a 120.000 bpd, desde profundidades considerables en una variedad de condiciones de pozo. Estos sistemas se componen por motor eléctrico, sello, separador de gas o Intake, bombas centrífugas multietapas, cable de alimentación, controlador de motor y transformadores.</p>
+                                <p>Por otro lado, los sistemas de levantamiento por cavidades progresivas (PCP) son bombas de desplazamiento positivo que usan cavidades progresivas selladas para mover fluidos hacia superficie. Los equipos PCP proporcionan un flujo que reduce el riesgo de emulsionar fluidos y evita el bloqueo de gas. La combinación de la cavidad progresiva junto con materiales de construcción de alta calidad conforman el sistema apropiado para producir flujos viscosos y abrasivos.</p>
+                            </div>
+                        </div><img class="img-a mt-5 img-fluid" src="assets/images/pages/ilustraciones/img27.png">
+                        <div class="sub-ecored mt-5" id="32">
+                            <h2>3.2 Cantidad de polos en motores AM y PMM. Velocidades en fondo </h2>
+                        </div>
+                        <p class="mt-5">Como se estudió en los capítulos anteriores la velocidad de giro del motor se relaciona con la frecuencia y el número de polos del motor: </p><img class="img-a mt-5 img-fluid" src="assets/images/pages/ilustraciones/img28.png">
+                        <p>En donde f es la frecuencia y P el número de polos. Normalmente la frecuencia utilizada para operar los motores es de 50/60 Hz, lo cual se toma como una constante, dejando como factor variable el número de polos para poder cambiar la velocidad del motor. </p>
+                        <p>Se puede decir entonces, que el número de polos regula la velocidad del motor teniendo que cuando el número de polos incrementa la velocidad disminuye y al disminuir el número de polos, aumenta la velocidad.</p><img class="img-a mt-5 img-fluid" src="assets/images/pages/ilustraciones/img29.png">
+                        <p class="mt-5">El gráfico representa los efectos del número de polos en la velocidad del motor eléctrico</p><img class="img-a mt-5 img-fluid" src="assets/images/pages/ilustraciones/img30.png">
+                        <p class="mt-5"><strong>Nota.</strong> El gráfico representa la velocidad de giro del eje del motor eléctrico en función de la frecuencia del voltaje a la cual está funcionando el motor y como se ve afectada por el número de polos del motor. </p>
+                        <div class="jumbotron">
+                            <div class="row justify-content-center align-items-center mt-5">
+                                <div class="col">
+                                    <p>El número de polos siempre es un número par, como el polo N y el polo S que existen en un sistema magnético no existen por separado. </p>
+                                    <p>En los motores de imanes permanentes, los imanes pueden ser fabricados individualmente en diferentes formas y tamaños y pueden ser magnetizados en diferentes direcciones. Cada polo podría consistir en un número de imanes segmentados en vez de una sola pieza. </p>
+                                </div>
+                                <div class="col-auto"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img31.png"></div>
+                            </div>
+                        </div>
+                        <div class="sub-ecored mt-5" id="33">
+                            <h2> 3.3 Ventajas y desventajas de los motores AM – PMM </h2>
+                        </div><img class="img-a mt-5 img-fluid" src="assets/images/pages/ilustraciones/img32.png">
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col">
+                                <p>El motor de inducción ha dominado el mercado global por décadas, sin embargo, los motores de imanes permanentes (PMM) están ganando aceptación para uso en los sistemas de levantamiento artificial. Algunos proveedores de PMM han afirmado reducción del 20 al 30% en costos de electricidad, mejora de la eficiencia y ampliación de las aplicaciones para los desafíos del sector petrolero con el uso de los motores PMM. Otros proveedores reportan incremento en las tasas de operación con estos motores debido a que la velocidad de operación puede llegar hasta las 8.500 rpm. De igual manera, el tamaño de los PMM es menor y son más livianos respecto a los motores de inducción IM. </p>
+                                <p>Varios estudios de compañías operadoras y proveedores de sistemas de levantamiento artificial han encontrado que los motores PMM son una alternativa de costos competitiva frente a los motores IM.</p>
+                                <p>En un estudio realizado en el año 2013 por la Society of Petroleum Engineers (SPE) junto con diferentes proveedores de equipos electrosumergibles con el fin de evaluar los beneficios de la tecnología PMM, se encontró que los equipos PMM son más pequeños y con mejor densidad de potencia y torque, pueden operar a velocidades más altas, son más eficientes y tienen un factor de potencia más alto. </p>
+                            </div>
+                            <div class="col-auto"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img33.png"></div>
+                        </div>
+                        <div class="jumbotron bg1 mt-5">
+                            <div class="row justify-content-center align-items-center mt-5">
+                                <div class="col-auto"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img34.png"></div>
+                                <div class="col">
+                                    <p>Los motores PMM son significativamente más pequeños en volumen, tienen alta densidad de potencia y torque, tienen 70% más potencia y 65% mejor torque que los motores IM. Estas ventajas benefician en algunas aplicaciones donde el tamaño, la longitud y el peso del motor son importantes. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-ecored-teme mt-5">
+                            <h3>Velocidad de Motor</h3>
+                        </div>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col">
+                                <p>Los PMM operan a velocidades sincrónicas ya que no existe el deslizamiento. Las velocidades más altas de operación en los PMM son un beneficio, esto quiere decir que los motores PMM operan a una velocidad sincrónica de 3.600 rpm independientemente de la carga. </p>
+                                <p><strong>Nota.</strong> El gráfico representa la relación entre la velocidad del motor y el porcentaje (%) de carga del motor eléctrico, haciendo el comparativo entre un motor de inducción (IM – Línea roja) y un motor con imanes permanentes (PMM- línea azul). Tomado de Society of Petroleum Engineers. SPE-185129-MS Leveraging ESP Energy Efficiency with Permanent Magnet Motor, 2017</p>
+                                <div class="col-auto"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img38.png"></div>
+                            </div>
+                        </div>
+                        <div class="sub-ecored-teme mt-5">
+                            <h3>Corriente y Aumento de la Temperatura de Motor</h3>
+                        </div>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col">
+                                <p>Dado que el rotor PMM no está formado por devanados de cobre, la corriente, la resistencia eléctrica y la temperatura del motor son ligeramente menores que en los motores IM. Estas condiciones permiten que la vida útil de los PMM incremente considerablemente respecto a los IM. </p>
+                                <p><strong>Nota.</strong> El gráfico representa la relación entre el porcentaje (%) de corriente del motor (izquierda) y el cambio de temperatura (derecha) en función del porcentaje (%) de carga del motor eléctrico, haciendo el comparativo entre un motor de inducción (IM – Línea roja) y un motor con imanes permanentes (PMM- línea azul). Tomado de Society of Petroleum Engineers. SPE-185129-MS Leveraging ESP Energy Efficiency with Permanent Magnet Motor, 2017</p>
+                                <div class="col-auto"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img35.png"></div>
+                            </div>
+                        </div>
+                        <div class="sub-ecored-teme mt-5">
+                            <h3>Eficiencia y Factor de Potencia</h3>
+                        </div>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col">
+                                <p>Los motores PMM utilizan la energía eléctrica de manera más eficiente que los IM variando desde condiciones de baja velocidad/bajo torque a condiciones de alta velocidad/alto torque.</p>
+                                <p>En condiciones de 3.600 rpm y 100% de torque la diferencia de eficiencia es aproximadamente del 6% entre los PMM y los IM.</p>
+                                <p><strong>Nota.</strong> El gráfico representa la relación entre el factor de potencia (izquierda) y la eficiencia (derecha) de los motores en función del porcentaje (%) de carga del motor eléctrico, haciendo el comparativo entre un motor de inducción (IM – Línea roja) y un motor con imanes permanentes (PMM- línea azul). Tomado de Society of Petroleum Engineers. SPE-185129-MS Leveraging ESP Energy Efficiency with Permanent Magnet Motor, 2017</p>
+                                <div class="col-auto"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img36.png"></div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col">
+                                <p>Una de las ventajas más importantes del PMM es que mantiene un alto factor de potencia independientemente de la carga, generalmente en un motor IM cuando la carga es mayor o igual al 50% el factor de potencia puede estar en 0.6 y 0.85, a diferencia de los motores PMM que para cargas mayores al 50% el factor de potencia puede estar entre 0.92 y 0.98. Esto se refleja en reducción de costos de energía eléctrica con factores de potencia más altos.</p>
+                                <p><strong>Nota.</strong> El gráfico representa las curvas de comportamiento de un motor PMM: Corriente nominal (Línea verde), voltaje nominal (Línea amarilla ), Velocidad de giro (RPM) (Línea gris), eficiencia (%) (Línea azul), factor de potencia (% (Línea naranja)); en función de % la carga del motor. Tomado de Society of Petroleum Engineers. SPE-185273-MS Case Study, Permanent magnet Motor Operation Below Perforation in Stagnant Fluid, 2017</p>
+                                <div class="col-auto"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img37.png"></div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col">
+                                <p><strong>Nota.</strong> El gráfico representa las curvas de comportamiento de un motor IM: Corriente nominal (Línea verde), voltaje nominal (Línea amarilla), Velocidad de giro (RPM)(Línea gris), eficiencia (%) (Línea azul), factor de potencia (%) (Línea amarilla); en función de % la carga del motor. Tomado de Society of Petroleum Engineers. SPE-185273-MS Case Study, Permanent magnet Motor Operation Below Perforation in Stagnant Fluid, 2017</p>
+                                <p>A pesar de las ventajas de los PMM sobre los IM, existen desventajas asociadas a:</p>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top"> El costo de manufactura es más elevado</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top"> Los imanes son fabricados con materiales escasos, siendo China el principal país que suministra el material magnético </p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top"> Costo de los sistemas de operación elevados. No puede operarse sin un controlador (VSD/VFD)</p>
+                                    </div>
+                                </div>
+                                <div class="col-auto"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img39.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-4">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>4. Variador de velocidad (VSD) - Controles para motor PMM</h1>
+                    </div>
+                    <div class="jumbotron bg-white"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img40.png">
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col">
+                                <p>Los principales equipos de superficie son: </p>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top"> transformador reductor </p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top"> VSD</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top"> transformador elevador </p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top"> filtros</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top"> caja de conexionado </p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top"> unidad de choke </p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top"> penetradores, entre otros </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img41.png"></div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col">
+                                <p>El componente central, del total de equipos de superficie, es el variador de frecuencia VSD. Es con ayuda de este equipo que se opera el motor de fondo, que puede ser asincrónico o de imán permanente. Este permite arrancar, poner en operación, detener, configurar protecciones del equipo instalado y operar el motor en diferentes modos tecnológicos. </p>
+                                <p>El VSD es un equipo complejo que incluye diferentes componentes, entre los que se destacan: un filtro de entrada, un filtro de salida, cuando están internos en el equipo, un variador o drive, un controlador y demás equipo de soporte para el manejo de todos los componentes y sistemas internos del VSD como una unidad. </p>
+                            </div>
+                            <div class="col-auto"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img42.png"></div>
+                        </div>
+                        <div class="jumbotron bg-1 mt-5">
+                            <p>El controlador, como componente básico del VSD es el dispositivo de interfaz entre operador y equipo. En el controlador se configura las características de los equipos de superficie y fondo, las protecciones y los modos de operación del motor. </p>
+                            <p>En caso de no tener suministro eléctrico en el sitio del pozo, se conecta el transformador reductor, el cual por una relación de transformación, convierte el voltaje de la red en un voltaje de baja tensión con el que operan los equipos.</p>
+                            <p>Del transformador reductor la tensión pasa al filtro de entrada y de allí al VSD como voltaje, frecuencia y fases. Una vez en el VDS y con toda la información ya configurada del equipo de fondo y las variables de operación, el voltaje pasa al filtro de salida, si se tiene previsto y de allí al transformador elevador. </p><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img43.png">
+                        </div>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col-6">
+                                <p>El transformador elevador, que se ha configurado previamente de acuerdo con los parámetros requeridos de alimentación del motor de fondo, se conecta con la caja de conexionado o caja de venteo. De esta forma, se configuran los elementos necesarios:</p>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Transformador reductor</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Filtro de entrada</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Variador de frecuencia </p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Filtro de salida o filtro de onda seno</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Transformador elevador </p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Caja de venteo </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-5"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img44.png"></div>
+                        </div>
+                        <p class="mt-5"><strong>Nota.</strong> La imagen muestra como es el conexionado dentro del transformador y el voltaje de salida al equipo de fondo de la BES </p><img class="img-a mt-5 img-fluid" src="assets/images/pages/ilustraciones/img45.png">
+                        <p class="mt-5">También, de acuerdo a las características de la operación se puede incluir dentro de los equipos de superficie una unidad de choke y penetrador que se utiliza para conectar el cable de fondo con el tendido en superficie.</p>
+                        <p>Con la finalidad de entender a cabalidad cómo funcionan los equipos de superficie en un sistema de bombeo electrosumergible le sugerimos acceder al siguiente enlace. </p>
+                        <p>Vamos a detenernos en detalle en cada uno de los equipos de superficie básicos en un sistema BES.</p>
+                        <section class="mt-5"><a class="media-link bg-color-verde-radial" href="https://www.portaldelpetroleo.com/2012/07/bombeo-electrosumergible-diseno.html" target="_blank"> <img class="media-link-icon" src="assets/images/pages/ilustraciones/enlace.svg" alt="">
+                                <div class="media-link-title ml-4">
+                                    <p>Ver el recurso web </p>
+                                </div>
+                            </a></section>
+                        <div class="sub-ecored-teme mt-5">
+                            <h3>Transformadores reductores </h3>
+                        </div>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col">
+                                <p>En general, un transformador es un dispositivo que no tiene partes móviles, este transfiere energía eléctrica de un circuito a otro bajo el principio denominado “Inducción electromagnética. La transferencia de energía se hace, por lo general, con cambios en los valores establecidos para voltajes y para corrientes manteniendo la misma carga eléctrica. </p>
+                            </div>
+                            <div class="col-auto"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img46.png"></div>
+                            <div class="jumbotron mt-5">
+                                <p>Ver vídeos complementarios </p>
+                                <div class="row justify-content-center align-items-center mt-5">
+                                    <div class="col-12 col-md-6">
+                                        <section><a class="media-link bg-color-verde-radial" href="https://www.youtube.com/watch?app=desktop&amp;v=-U1ZMfc7sac" target="_blank"> <img class="media-link-icon" src="assets/images/pages/ilustraciones/enlace.svg" alt="">
+                                                <div class="media-link-title ml-4">
+                                                    <p>¿Cómo funcionan los transformadores? </p>
+                                                </div>
+                                            </a></section>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <section><a class="media-link bg-color-verde-radial" href="https://www.youtube.com/watch?app=desktop&amp;v=JG_BtY-mBZM" target="_blank"> <img class="media-link-icon" src="assets/images/pages/ilustraciones/enlace.svg" alt="">
+                                                <div class="media-link-title ml-4">
+                                                    <p>Cómo Funciona un Transformador ⚡ Qué es un Transformador </p>
+                                                </div>
+                                            </a></section>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center align-items-center mt-5">
+                                    <div class="col-8">
+                                        <section><a class="media-link bg-color-verde-radial" href="https://www.youtube.com/watch?app=desktop&amp;v=DD71yosoo0U" target="_blank"> <img class="media-link-icon" src="assets/images/pages/ilustraciones/enlace.svg" alt="">
+                                                <div class="media-link-title ml-4">
+                                                    <p>Máquinas eléctricas - El transformador </p>
+                                                </div>
+                                            </a></section>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center align-items-center mt-5">
+                                <div class="col-12 col-md-6"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img47.png"></div>
+                                <div class="col-12 col-md-6"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img48.png"></div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col">
+                                <p>Si un cable está bobinado alrededor de un núcleo de hierro y pasa una corriente a través de este, se induce un campo magnético en el núcleo. La fuerza del campo magnético depende de los KVA que pasan por el bobinado. Si hay otro cable bobinado alrededor del mismo núcleo de hierro, el campo magnético inducirá una corriente y un voltaje en el segundo bobinado. </p>
+                                <p>El bobinado que recibe voltaje de una fuente de alimentación se denomina Primario y el bobinado que recibe voltaje por inducción se le denomina Secundario, como lo muestra la gráfica:</p>
+                            </div>
+                            <div class="col-auto"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img49.png"></div>
+                        </div>
+                        <div class="jumbotron bg-1 mt-5">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-auto"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img50.png"></div>
+                                <div class="col">
+                                    <p>El equipo de superficie también incluye un transformador reductor o SDT que permiten reducir el voltaje del secundario con respecto al primario. Por ejemplo, el voltaje del primario puede ser 13.800 VAC, suministrado por línea de media tensión y es reducido a un voltaje secundario de 480 VAC que entra al variador. </p>
+                                    <p>Los VSD utilizan un transformador elevador trifásico o SUT para elevar el voltaje de salida del variador que por lo general es 480V al valor requerido por el motor de fondo. Los transformadores elevadores tienen un sistema de regulación o Taps o selectores manuales que permite entregar en la salida, es decir en el Secundario el voltaje que requiere el motor de fondo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-ecored-teme mt-5">
+                            <h3>Caja de venteo o gabinete de conexión </h3>
+                        </div>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col">
+                                <p>La caja de venteo es un gabinete básico de conexión donde se enlazan el equipo de fondo y el equipo de superficie y tiene como función principal, además del conexionado, evacuar al exterior las posibles emanaciones de gas que, a través del cable de potencia, migran de fondo a superficie </p><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img51.png">
+                            </div>
+                            <div class="col-auto"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img52.png"></div>
+                        </div>
+                        <div class="sub-ecored mt-5" id="41">
+                            <h2>4.1 Switchboard y variadores de velocidad como parte de un sistema ESP. </h2>
+                        </div><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img53.png">
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col">
+                                <p>Los motores eléctricos, por lo general, operan a una velocidad constante o casi constante y con valores que dependen de la alimentación que reciben. Por lo tanto, es importante tener en cuenta las características propias del motor para establecer el equipo de superficie a utilizar. </p>
+                                <p>Con la finalidad de dar arranque a los motores y ponerlos en operación se utilizan diferentes tipos de arrancadores, que van desde los más sencillos, denominados Switchboard hasta arrancadores complejos, denominados VSD. </p>
+                                <p>Dentro de los sistemas de arranque de motores se diferencian tres tipos, de arrancadores,que son los más usados en la industria: </p>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Switchboard básico.</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Switchboard con arranque suave.</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">VSD.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img54.png"></div>
+                        </div>
+                        <div class="sub-ecored-teme mt-5">
+                            <h3>Switchboards </h3>
+                        </div>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col">
+                                <p>Los switchboard son equipos básicos de arranque y parada de motores de fondo. El arranque se da de forma directa con un contactor trifásico que arranca y para el motor de fondo.</p>
+                                <p>Estos arrancadores hacen que el equipo de fondo BES opere a una velocidad fija, por lo que se limita el caudal de producción, dentro de sus características no figura la de cambiar frecuencia de giro del motor por lo que se cataloga como un equipo básico.</p>
+                                <p>Hay dos tipos de switchboard: de tipo básico y de arranque suave que son utilizados en aplicaciones específicas donde no se requieren cambios de frecuencia. </p>
+                                <p>Los switchtboard básicos dan arranques con torques iniciales altos, que pueden afectar los componentes del motor, por lo cual se han diseñado switchboard con arranque suave que ayudan a proteger el motor en el arranque. </p>
+                            </div>
+                            <div class="col-auto"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img55.png"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img56.png"></div>
+                        </div>
+                        <div class="arrow py-3 mt-5 br-radius">
+                            <h3>Los switchboard no se pueden utilizar en aplicaciones con motores PMM.</h3>
+                        </div>
+                        <div class="row justify-content-center align-items-stretch">
+                            <div class="col-12 col-md-6 jumbotron bg-2">
+                                <h3>Ventajas</h3>
+                                <div class="hr-ecored"></div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Fácil instalación y mantenimiento</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Alta confiabilidad. Requiere mantenimientos básicos y personal no especializado</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Dimensión y peso reducidos</p>
+                                    </div>
+                                </div><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img57.png">
+                            </div>
+                            <div class="col-12 col-md-6 jumbotron bg-3">
+                                <h3>Ventajas</h3>
+                                <div class="hr-ecored"></div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Pico de corriente al arranque (modelo básico)</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Límite en potencia máxima del motor BES</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Velocidad invariable de rotación</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">No ofrecen opción de modos tecnológicos</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Compatibles solo con motores asincrónicos</p>
+                                    </div>
+                                </div><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img58.png">
+                            </div>
+                        </div>
+                        <div class="sub-ecored-teme mt-5">
+                            <h3>VSD </h3>
+                        </div>
+                        <p class="mt-5">Con el objetivo de poder regular la velocidad de giro de los motores de fondo se incorporaron a las operaciones de producción de crudo variadores de velocidad VSD (Variable Speed Drive por sus siglas en inglés). </p>
+                        <p>El variador de velocidad o VSD, con drive de variación de frecuencia y con controladores incorporados, transforma la frecuencia fija y el voltaje AC fijo a frecuencia y voltajes AC variables de corriente, también tiene como función principal el suministro de alimentación al motor de fondo y la protección del equipo</p><img class="img-a mt-5 img-fluid" src="assets/images/pages/ilustraciones/img59.png">
+                        <div class="arrow py-3 mt-5 br-radius">
+                            <h3>La principal característica de un VSD es que permite el ajuste de la velocidad (RPM) del motor de un sistema BES </h3>
+                        </div>
+                        <div class="jumbotron">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col">
+                                    <p>Debido a que el VSD permite operar a un rango amplio de frecuencias, puede cambiar la capacidad de bombeo para adaptarla a las condiciones del yacimiento. </p>
+                                    <p>La flexibilidad operacional del equipo es conveniente cuando:</p>
+                                    <div class="list">
+                                        <div class="list__item">
+                                            <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                        </div>
+                                        <div class="list__txt">
+                                            <p class="m-top">La productividad es desconocida</p>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="list__item">
+                                            <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                        </div>
+                                        <div class="list__txt">
+                                            <p class="m-top">Cambios en las condiciones del pozo a través del tiempo</p>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="list__item">
+                                            <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                        </div>
+                                        <div class="list__txt">
+                                            <p class="m-top">Mantenimiento de la PIP (presión en la admisión).</p>
+                                        </div>
+                                    </div>
+                                    <p>Algunos de los beneficios adicionales, además de la flexibilidad, son la extensión de la vida útil del equipo de fondo, los arranques suaves que no impactan sobre los componentes del sistema, la reducción de la corriente de arranque y del alto pico de torque, la velocidad controlada de forma automática por el equipo, entre otros. </p>
+                                </div>
+                                <div class="col-auto"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img60.png"></div>
+                            </div>
+                        </div>
+                        <div class="arrow py-3 mt-5 br-radius">
+                            <h3>Los switchboard no se pueden utilizar en aplicaciones con motores PMM.</h3>
+                        </div>
+                        <div class="row justify-content-center align-items-stretch">
+                            <div class="col-12 col-md-6 jumbotron bg-2">
+                                <h3>Ventajas</h3>
+                                <div class="hr-ecored"></div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Ajuste de las RPM del motor</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">No hay restricción en cuanto a la máxima capacidad del motor</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Permite varios modos tecnológicos de operación del motor.</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Puede adaptarse para operar motores AM y PMM.</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Arranque suave, sin pico de corriente (en modos operativos estándar).</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Permite configurar protecciones del equipo en respuesta a condiciones de la operación como por ejemplo parar el equipo cuando se tiene sobre la temperatura del equipo de fondo durante la operación. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 jumbotron bg-3">
+                                <h3>Desventajas</h3>
+                                <div class="hr-ecored"></div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Mantenimientos altamente complejos que requieren personal especializado</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Dimensiones y peso considerables</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Generación de armónicos en la línea</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Mayores costos CAPEX</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-ecored-teme mt-5">
+                            <h3>Características de un variador de velocidad VSD </h3>
+                        </div><img class="img-a my-5 img-fluid" src="assets/images/pages/ilustraciones/img61.png">
+                        <div class="sub-ecored" id="42">
+                            <h2>4.2 Diseño de un variador de velocidad VSD (generalidades). </h2>
+                        </div>
+                        <div class="list">
+                            <div class="list__item">
+                                <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                            </div>
+                            <div class="list__txt">
+                                <p class="m-top"><strong>Controlador.</strong> Control y protección de la ESP, registro y almacenamiento de datos, Interfaz con el operador de la ESP. </p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col-4"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img62.png"></div>
+                            <div class="col-8"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img63.png"></div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col">
+                                <p>La finalidad del controlador del VSD es la de efectuar el control del equipo de fondo y la protección del equipo BES. También tiene como objetivo hacer el registro de los parámetros de operación del equipo y de almacenarlos. Esta información es importante en los análisis de operación del equipo y la formular las conclusiones en caso de una falla. </p>
+                                <p>Con ayuda del controlador, en su calidad de interfaz entre el operador del equipo y el sistema BES, el operador da los comandos de operación al equipo de fondo, configura los modos de funcionamiento y establece las protecciones para que el VSD actúe ante cambios en el funcionamiento del equipo o en las condiciones del yacimiento, las que puedan afectar su funcionamiento y su vida útil. </p>
+                                <p>El ambiente de operación del controlador puede ser Windows, Linux u otro, dependiendo del fabricante, al igual que la interfaz depende del software instalado.</p>
+                                <p>El controlador tiene, por lo general, por una pantalla, un teclado, puertos USB e indicadores lumínicos.</p>
+                                <p>El diseño del controlador depende de los desarrollos y del nivel de complejidad de las operaciones que maneja. Por lo general está compuesto por:</p>
+                            </div>
+                            <div class="col-auto"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img64.png"></div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top"> Tarjeta interfaz que hace conversión de la información a través de protocolos de comunicación. Empareja el computador del controlador y los componentes internos y externos, como SCADA, panel de superficie y otros;</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top"> Tarjeta de alimentación. Genera voltajes adecuados para el computador del controlador, la tarjeta de interfaz, pantalla y teclado;</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top"> Computador industrial que hace el procesamiento y recopilación de registros y la adquisición y almacenamiento de datos de operación. Además, puede estar provisto de entradas y salidas análogas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img65.png"></div>
+                        </div>
+                        <p class="mt-5">Debido a que los fabricantes generan continuamente nuevos desarrollos y mejoras los softwares de los controladores continuamente se deben actualizar. </p>
+                        <div class="hr-ecored"></div>
+                        <div class="list">
+                            <div class="list__item">
+                                <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                            </div>
+                            <div class="list__txt">
+                                <p class="m-top"><strong>El Drive de velocidad</strong> es el corazón del VSD, es el dispositivo que se utiliza para convertir una red eléctrica de uso en corriente trifásica con frecuencias y voltajes ajustables. Es el principal componente de un VSD y el que mayor complejidad muestra. </p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img66.png"></div>
+                            <div class="col"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img67.png"></div>
+                        </div>
+                        <p class="mt-5"><strong>Nota</strong> El drive Danfoss es reconocido en el mercado como uno de los más confiables se recomienda acceder a las páginas de la compañía para conocerlo más a fondo.</p>
+                        <div class="jumbotron mt-5">
+                            <p>Consta de un módulo diodo-tiristor y módulo IGBT </p>
+                            <div class="row justify-content-center align-items-center mt-5">
+                                <div class="col"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img68.png"></div>
+                                <div class="col"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img69.png"></div>
+                            </div>
+                            <section class="mt-5"><a class="media-link bg-color-verde-radial" href="https://files.danfoss.com/download/Drives/MG33AS05.pdf" target="_blank"> <img class="media-link-icon" src="assets/images/pages/ilustraciones/enlace.svg" alt="">
+                                    <div class="media-link-title ml-4">
+                                        <p>Ver el recurso web </p>
+                                    </div>
+                                </a></section>
+                        </div>
+                        <div class="hr-ecored"></div>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top"><strong>Breaker principal. </strong> Control de alimentación del motor, protección cortocircuito, protección sobrecarga, protección contra arco eléctrico.</p>
+                                        <p>Los hay de diferentes tipos de acuerdo con la potencia del VSD en el que están instalados, por lo general son de 380 o de 480 VAC.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img70.png"></div>
+                        </div>
+                        <div class="hr-ecored"></div>
+                        <div class="list">
+                            <div class="list__item">
+                                <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                            </div>
+                            <div class="list__txt">
+                                <p class="m-top"><strong>Filtro de entrada,</strong> se encuentra instalado al interior del VSD, en algunos casos se puede encontrar como una unidad separada, conectada al VSD, se utiliza como dispositivo de protección del sistema de alimentación por picos armónicos. Dentro de los componentes principales de un filtro se encuentra un banco de condensadores y los reactores.</p>
+                            </div>
+                        </div>
+                        <section class="mt-5"><a class="media-link bg-color-verde-radial" href="https://christian3306.files.wordpress.com/2010/10/bombeo-electrosumergible.pdf" target="_blank"> <img class="media-link-icon" src="assets/images/pages/ilustraciones/enlace.svg" alt="">
+                                <div class="media-link-title ml-4">
+                                    <p>Acceso a Material complementario</p>
+                                </div>
+                            </a></section>
+                        <div class="hr-ecored"></div>
+                        <div class="list">
+                            <div class="list__item">
+                                <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                            </div>
+                            <div class="list__txt">
+                                <p class="m-top"><strong>Filtro de salida (opcional).</strong> Al igual que el filtro de entrada, puede estar incorporado al variador en un mismo gabinete, o bien en un gabinete por separado conectado al VSD. El filtro de onda sinusoidal reduce los picos armónicos del voltaje de salida.</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img71.png">
+                                <section class="mt-5"><a class="media-link bg-color-verde-radial" href="https://www.youtube.com/watch?app=desktop&amp;v=LhaE_rLDjAQ" target="_blank"> <img class="media-link-icon" src="assets/images/pages/ilustraciones/enlace.svg" alt="">
+                                        <div class="media-link-title ml-4">
+                                            <p>Tasa de distorsión armónica y otros conceptos básicos de los armónicos eléctricos </p>
+                                        </div>
+                                    </a></section>
+                            </div>
+                            <div class="col"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img72.png">
+                                <section class="mt-5"><a class="media-link bg-color-verde-radial" href="https://www.youtube.com/watch?app=desktop&amp;v=UefBYrOFYP4" target="_blank"> <img class="media-link-icon" src="assets/images/pages/ilustraciones/enlace.svg" alt="">
+                                        <div class="media-link-title ml-4">
+                                            <p>Electronica practica y basica #10: Transformadores 1/2 </p>
+                                        </div>
+                                    </a></section>
+                            </div>
+                        </div>
+                        <div class="hr-ecored"></div>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top"><strong>Transformador alimentador </strong> reduce voltajes para suministro a dispositivos internos. Los diferentes conjuntos al interior del variador trabajan con voltajes bajos. El transformador de corriente tiene como finalidad entregar el voltaje requerido para que los componentes operen adecuadamente.</p>
+                                        <p>Medidor eléctrico para medición de voltaje y corriente del VSD</p>
+                                        <p>A través del medidor eléctrico se establecen los voltajes que están ingresando al VSD.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img73.png"></div>
+                        </div>
+                        <div class="hr-ecored"></div>
+                        <div class="list">
+                            <div class="list__item">
+                                <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                            </div>
+                            <div class="list__txt">
+                                <p class="m-top"><strong>Sistemas de refrigeración. </strong>Debido a las condiciones de operación (medio ambiente) y al funcionamiento de los componentes internos se generan altas temperaturas que se deben disipar por medio de sistemas de refrigeración instalados al interior del variador. La finalidad es generar temperaturas de operación del equipo que no afecten los componentes. </p>
+                            </div>
+                        </div>
+                        <div class="hr-ecored"></div>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top"><strong>Bloque de terminales </strong> para conexión de dispositivos externos. A través del bloque de terminales, se pueden conectar al variador dispositivos internos, como por ejemplo Scada que permite transmitir los datos de funcionamiento del equipo a un usuario remoto.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto"><img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img74.png"></div>
+                        </div>
+                        <div class="hr-ecored"></div>
+                        <div class="list">
+                            <div class="list__item">
+                                <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                            </div>
+                            <div class="list__txt">
+                                <p class="m-top"><strong>Tarjeta backspin</strong> para protección del equipo de fondo durante giro en inversa del sistema. Instalada en los equipos como protección del equipo cuando el equipo gira en sentido contrario. Los equipos BES levantan una columna de fluido por la tubería para poner producción en superficie, eventos de parada, cuando el equipo deja de funcionar, la columna de fluido, por acción de gravedad comienza a desplazarse de regreso a fondo de pozo, eso genera un giro en inversa de los componentes de la bomba, dando lugar a giro del eje en sentido contrario, este giro hace que los rotores del motor giren también en reversa y que el motor PMM se convierta en un generador de voltaje, dicho voltaje generado puede ser muy cercano al voltaje nominal del equipo. </p>
+                                <p>Este voltaje, que viaja a través del cable de fondo, se transmite a superficie pudiendo ser fatal. Por otro lado, el efecto backspin también puede afectar la integridad de los equipos de fondo en el evento en que se intente dar arranque estando el equipo girando en sentido inverso. La tarjeta no permite dar arranque al equipo hasta tanto la frecuencia de giro no sea segura. </p>
+                            </div>
+                        </div>
+                        <div class="hr-ecored"></div>
+                        <div class="list">
+                            <div class="list__item">
+                                <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                            </div>
+                            <div class="list__txt">
+                                <p class="m-top"><strong>Supresor de voltajes.</strong> Actúan en eventos de sobre voltajes para protección del equipo </p>
+                            </div>
+                        </div><img class="img-a mt-5 img-fluid" src="assets/images/pages/ilustraciones/img75.png">
+                        <div class="sub-ecored mt-5" id="43">
+                            <h2>4.3 Configuración del controlador para motores AM - PMM. </h2>
+                        </div>
+                        <p class="mt-5">Dependiendo del tipo de controlador, los datos se ingresan al computador industrial. Por lo general con la ayuda de un teclado numérico o alfanumérico, en el controlador del VSD, es posible configurar datos tales como:</p>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col-11">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Información del campo, cluster y pozo donde está instalado el equipo ESP.</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Hora y fecha.</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Unidades de medición.</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Modo de arranque: Manual, Automático, Programado.</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Corriente nominal del VSD.</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Configuración del drive.</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Configuración del motor AM o PMM.</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Tipo AM o PMM.</p>
+                                        <div class="list">
+                                            <div class="list__item">
+                                                <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                            </div>
+                                            <div class="list__txt">
+                                                <p class="m-top">Potencia.</p>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div class="list__item">
+                                                <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                            </div>
+                                            <div class="list__txt">
+                                                <p class="m-top">Voltaje.</p>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div class="list__item">
+                                                <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                            </div>
+                                            <div class="list__txt">
+                                                <p class="m-top">Amperaje.</p>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div class="list__item">
+                                                <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                            </div>
+                                            <div class="list__txt">
+                                                <p class="m-top">RPM nominal.</p>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div class="list__item">
+                                                <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                            </div>
+                                            <div class="list__txt">
+                                                <p class="m-top">Frecuencia nominal.</p>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div class="list__item">
+                                                <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                            </div>
+                                            <div class="list__txt">
+                                                <p class="m-top">Factor de potencia para motores PMM.</p>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div class="list__item">
+                                                <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                            </div>
+                                            <div class="list__txt">
+                                                <p class="m-top">Inductancia.</p>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div class="list__item">
+                                                <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                            </div>
+                                            <div class="list__txt">
+                                                <p class="m-top">Cantidad de pares de polos.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Especificación de filtros de entrada y salida y características.</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Configuración transformador elevador SUT.</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Tipo de control U/F, Vector u otro de acuerdo al fabricante del equipo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col-auto"> <img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img76.png"></div>
+                            <div class="col">
+                                <p><strong>Nota:</strong> El modo U/F se utiliza para configurar frecuencia contra voltaje. En voltaje en el punto 0 Hz establece el voltaje de salida del variador a 0Hz y Voltaje U5 establece el voltaje en cinco puntos de la característica en tanto que Frecuencia 6 establece la frecuencia en cinco puntos de la característica.</p>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Tipo y configuración de parámetros del sensor de fondo.</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Tipo y configuración del panel de superficie.</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Configurar información de la bomba. Caudal, levantamiento, profundidad de asentamiento (sólo con carácter informativo).</p>
+                                    </div>
+                                </div>
+                                <p>Cada controlador responde a unas necesidades específicas del fabricante y de allí la información que requiere que se le incorpore.</p>
+                            </div>
+                        </div>
+                        <div class="sub-ecored mt-5" id="44">
+                            <h2>4.4 VDS como protección del equipo de fondo </h2>
+                        </div>
+                        <p class="mt-5">A través del controlador del VSD se pueden configurar protecciones del equipo de fondo que actúan cuando hay parámetros internos o externos fuera de los rangos establecidos de operación, entre las principales protecciones que por lo general los VSD incluyen, se encuentran: </p>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col-auto"> <img class="img-a my-3 img-fluid" src="assets/images/pages/ilustraciones/img77.png"></div>
+                            <div class="col">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Sobrevoltaje o bajo voltaje.</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Desbalance de voltaje y corriente.</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Sobrecarga y baja carga del motor.</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Desbalance de corriente de motor.</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Corriente máxima de motor.</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Presión en la admisión y en la descarga.</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Alta temperatura y alta vibración del motor.</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Bajo caudal.</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Resistencia al aislamiento.</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v1.svg"></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="m-top">Pérdida de comunicación con el Drive. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-ecored mt-5" id="45">
+                            <h2>4.5 Configuraciones tecnológicas de operación del VSD con motores AM y PM. </h2>
+                        </div>
+                        <div class="list">
+                            <div class="list__item">
+                                <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                            </div>
+                            <div class="list__txt">
+                                <p class="m-top">Modo cíclico o periódico que se utiliza para adaptar la ESP a las condiciones de yacimiento deteniendo o arrancando el equipo para permitir la recuperación de la presión en fondo.</p>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list__item">
+                                <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                            </div>
+                            <div class="list__txt">
+                                <p class="m-top">Modo alternancia de frecuencia que es utilizado para adaptarse a las condiciones de yacimiento sin que el equipo pare.</p>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list__item">
+                                <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                            </div>
+                            <div class="list__txt">
+                                <p class="m-top">Modo de cambio programado de frecuencia que se utiliza para aumentar o disminuir la frecuencia durante cierto periodo de tiempo para lograr las condiciones requeridas de pozo.</p>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list__item">
+                                <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                            </div>
+                            <div class="list__txt">
+                                <p class="m-top">Modo mantenimiento de parámetros que es utilizado para mantener uno de los parámetros críticos de aplicación de la ESP cambiando la frecuencia del VSD.</p>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list__item">
+                                <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                            </div>
+                            <div class="list__txt">
+                                <p class="m-top">Modo de optimización de voltaje y salida. Utilizado para establecer la corriente mínima posible del motor cambiando el voltaje de salida para motores AM y PMM.</p>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list__item">
+                                <div class="list__item__icon"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/v2.svg"></div>
+                            </div>
+                            <div class="list__txt">
+                                <p class="m-top">Modo sacudida que se utiliza para la circulación por etapas para remover deposiciones de sólidos aumentando la frecuencia por cierta cantidad de tiempo.</p>
+                            </div>
+                        </div><img class="img-a mt-5 img-fluid" src="assets/images/pages/ilustraciones/img78.png">
+                        <div class="sub-ecored mt-5" id="46">
+                            <h2>4.6 Actualización de controladores de VSD para manejo de motores PMM. </h2>
+                        </div><img class="img-a mt-5 img-fluid" src="assets/images/pages/ilustraciones/img79.png">
+                        <p class="mt-5">Dichas tarjetas son montadas en controladores ya existentes o en controladores totalmente nuevos que se instalan en los VSD</p>
+                        <p>Las tarjetas se programan con softwares especialmente diseñados para manejar tales motores.</p>
+                        <p>El diseño general del controlador es similar al de un controlador convencional que incluye configuración de parámetros de equipo de superficie y fondo, configuración de protecciones y de modos tecnológicos de operación.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="glosario">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Glosario</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <p><strong class="mr-2">Estator:</strong>componente fijo de un motor de inducción</p>
+                        <p><strong class="mr-2">Devanado:</strong>hilo conductor enrollado y aislado para conformar el estator y/o el rotor de un motor electrico</p>
+                        <p> <strong class="mr-2">Voltaje/Corriente AC Trifásico:</strong>sistema de producción, distribución y consumo de energía eléctrica formado por tres corrientes alternas monofásicas de igual frecuencia y amplitud, que representa una diferencia entre ellas de 120°</p>
+                        <p><strong class="mr-2">Sistemas de levantamiento:</strong>sistemas utilizados en la industria petrolera para la producción de hidrocarburos llevando el fluido desde el fondo del yacimiento hasta la superficie</p>
+                        <p><strong class="mr-2">Sistemas de bombeo Electrosumergible:</strong>tipo de sistema de levantamiento generalmente compuestos motor eléctrico, sello, separador de gas o Intake, bombas centrífugas multietapas, cable de alimentación, controlador de motor y transformadores </p>
+                        <p><strong class="mr-2">Intake:</strong>componente de un sistema de bombeo electrosumergible por donde ingresa el fluido de pozo al sistema de levantamiento</p>
+                    </div>
+                </div>
+            </div>
+            <div id="anexos">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Material complementario</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <table class="table table-bordered table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th class="text-center">Nombre del documento o material.</th>
+                                    <th class="text-center">Tipo de material. </th>
+                                    <th class="text-center">Enlace del Recurso.</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>¿Cómo funciona un motor de inducción? </td>
+                                    <td>Video</td>
+                                    <td> <a href="https://www.youtube.com/watch?v=AQqyGNOP_3o" target="_blank"><span class="fa fa-youtube-play mr-3" aria-hidden="true"></span> ver</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Comparison of Permanent Magnet Electric Motor Technology</td>
+                                    <td>Video</td>
+                                    <td> <a href="https://www.youtube.com/watch?v=E5VS4s-R7vk" target="_blank"><span class="fa fa-youtube-play mr-3" aria-hidden="true"></span> ver</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Synchronous motor with permanent magnets. </td>
+                                    <td>Video</td>
+                                    <td> <a href="https://www.youtube.com/watch?v=NRxo5aDGG8M" target="_blank"><span class="fa fa-youtube-play mr-3" aria-hidden="true"></span> ver </a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="referencias">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Referencias bibliográficas</h1>
+                    </div>
+                    <div class="jumbotron bg-white referencias">
+                        <p>Armónicos: origen, efectos y soluciones. (2019, 13 mayo). Circutor. <a class="ml-2" href="http://circutor.es/es/productos/destacados/4622-armonicos-origen-efectos-y-soluciones" target="_blank">http://circutor.es/es/productos/destacados/4622-armonicos-origen-efectos-y-soluciones</a></p>
+                        <hr>
+                        <p>Baker, H.(2014). Submersible Pump Handbook 11th Edition. <a class="ml-2" href=" " target="_blank"> </a></p>
+                        <hr>
+                        <p>Comparison of Permanent Magnet Electric Motor Technology. (2018, 4 mayo). [Vídeo]. YouTube. <a class="ml-2" href="https://www.youtube.com/watch?v=E5VS4s-R7vk" target="_blank">https://www.youtube.com/watch?v=E5VS4s-R7vk</a></p>
+                        <hr>
+                        <p>Dispositivo electrónico para control infinito de velocidad en motores de corriente alterna. (s. f.). [Fotografía]. EcuRed. <a class="ml-2" href="https://www.ecured.cu/Variador_de_velocidad" target="_blank">https://www.ecured.cu/Variador_de_velocidad</a></p>
+                        <hr>
+                        <p>Dmitry, L. (s. f.). Permanent Magnet Synchronous Motor. Engineering Solutions. <a class="ml-2" href="https://en.engineering-solutions.ru/motorcontrol/pmsm/" target="_blank">https://en.engineering-solutions.ru/motorcontrol/pmsm/</a></p>
+                        <hr>
+                        <p>ESP&amp;OIL. ENGINEERING CONSULTANTS. (2004). Filtro de armónicas [Fotografía.]. International Training Group.<a class="ml-2" href="https://christian3306.files.wordpress.com/2010/10/bombeo-electrosumergible.pdf" target="_blank">https://christian3306.files.wordpress.com/2010/10/bombeo-electrosumergible.pdf</a></p>
+                        <hr>
+                        <p>How does an Induction Motor work ? (2017, 31 agosto). [Vídeo]. YouTube. <a class="ml-2" href="https://www.youtube.com/watch?v=AQqyGNOP_3o" target="_blank">https://www.youtube.com/watch?v=AQqyGNOP_3o</a></p>
+                        <hr>
+                        <p>Motor de inducción. (2016, 22 noviembre). Máquinas Eléctricas. <a class="ml-2" href="https://maquinaselectricasblog.wordpress.com/motor-de-induccion/" target="_blank">https://maquinaselectricasblog.wordpress.com/motor-de-induccion/</a></p>
+                        <hr>
+                        <p>DSociety of Petroleum Engineers. (2017).Leveraging ESP Energy Efficiency with Permanent Magnet Motor.<a class="ml-2" href=" " target="_blank"> </a></p>
+                        <hr>
+                        <p>Society of Petroleum Engineers. (2017).Case Study, Permanent Magnet Motor Operation Below Perforations in Stagnant Fluid.<a class="ml-2" href=" " target="_blank"> </a></p>
+                        <hr>
+                        <p>Synchronous motor with permanent magnets. (2018, 12 octubre). [Vídeo]. YouTube. <a class="ml-2" href="https://www.youtube.com/watch?v=NRxo5aDGG8M" target="_blank">https://www.youtube.com/watch?v=NRxo5aDGG8M</a></p>
+                        <hr>
+                        <p>TTakacs, G. (2018).Electrical Submersible Pumps Manual. 2nd edition. <a class="ml-2" href=" " target="_blank"> </a></p>
+                        <hr>
+                        <p>Wildi, T.( 2007). Máquinas Eléctricas y sistemas de potencia. Sexta edición.<a class="ml-2" href=" " target="_blank"> </a></p>
+                        <hr>
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-12 col-md-5 my-4">
+                                <div class="jumbotron p-4">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <p class="text-center pl-4"><i class="fa fa-picture-o fa-2x text-center"></i></p>
+                                        <p class="text-center flex-grow-1">Fotografías y vectores tomados de <a href="https://www.shutterstock.com/" target="_blank">https://www.shutterstock.com/</a> y <a href="https://www.freepik.es/" target="_blank">https://www.freepik.es/</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5 my-4">
+                                <div class="jumbotron p-4">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <p class="text-center pl-4"><i class="fa fa-creative-commons fa-2x text-center"></i></p>
+                                        <p class="text-center flex-grow-1">Licencia Creative Commons <br> <strong>CC BY-NC-SA</strong><br> <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Ver licencia.</a> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer" id="Creditos">
+            <div class="container">
+                <h1>Créditos </h1>
+                <div class="brand-line-primary"></div>
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <h3 class="footer-subtitulo mb-4">ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES </h3>
+                        <p class="footer-texto mb-2"><strong>Ingry Dayanna Bonilla Monzon </strong><br /> <span class="text-small">Líder del equipo</span></p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 col-md-6">
+                        <h4 class="footer-subtitulo-2 mt-0">
+                            <div class="fa fa-caret-right mr-2"></div>Contenido Instruccional
+                        </h4>
+                        <p class="footer-texto mb-2"><strong>Gloria Matilde Lee Mejía </strong><br /> <span class="text-small">Responsable del equipo</span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de Comercio y Servicios</span><br><span class="text-small">Regional Tolima</span></p>
+                        <p class="footer-texto mb-2"><strong>Rafael Nelftalí Lizcano Reyes</strong><br /> <span class="text-small">Asesor pedagógico<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">CENTRO INDUSTRIAL DEL DISEÑO Y LA MANUFACTURA </span><br><span class="text-small">Regional Santander </span></p>
+                        <p class="footer-texto mb-2"><strong>Pablo García</strong><br /><span class="text-small">Experto temático<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Borets Services</span></p>
+                        <p class="footer-texto mb-2"><strong>Carlos Andrés Rodríguez</strong><br /><span class="text-small">Diseñador Instruccional<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de Diseño y metrología</span><br><span class="text-small">Regional Distrito Capital</span></p>
+                        <p class="footer-texto mb-2"><strong>Leidy Carolina Arias</strong><br /><span class="text-small">Evaluadora instruccional<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de Diseño y metrología</span><br><span class="text-small">Regional Distrito Capital </span></p>
+                        <p class="footer-texto mb-2"><strong>Julieth Paola Vital López</strong><br /><span class="text-small">Revisora de estilo<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro para la Industria y la Comunicación Gráfica</span><br><span class="text-small">Regional Distrito Capital</span></p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h4 class="footer-subtitulo-2 mt-0">
+                            <div class="fa fa-caret-right mr-2"></div>Diseño y desarrollo de recursos educativos digitales
+                        </h4>
+                        <p class="footer-texto"><strong>Francisco José Lizcano Reyes </strong><br /> <span class="text-small">Responsable del equipo<br /></span></p>
+                        <p class="footer-texto"><strong>Leyson Fabian Castaño Perez</strong><br /> <span class="text-small">Integración de recursos y pruebas<br /></span></p>
+                        <p class="footer-texto"> <strong>Luis Gabriel Urueta Alvarez</strong><br />
+                            <strong>Nelson Iván Vera Briceño</strong><br /><span class="text-small">Diseño web & producción audiovisual<br /></span></p>
+                        <p class="footer-texto"><strong>Edward Leonardo Pico Cabra</strong><br /><span class="text-small">Desarrollo front-end<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">CENTRO INDUSTRIAL DEL DISEÑO Y LA MANUFACTURA </span><br><span class="text-small">Regional Santander</span></p>
+                        <h4 class="footer-subtitulo-2 mt-5">
+                            <div class="fa fa-caret-right mr-2"></div>Gestores de repositorio
+                        </h4>
+                        <p class="footer-texto"><strong>Brayan Steven Pinto Diaz</strong><br />
+                            <strong>Ricardo Alfonso Gonzalez Vargas</strong><br /> <span class="text-small">Validación de recursos.<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de comercio y servicios </span><br><span class="text-small">Regional Tolima</span></p>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center mt-5"><img src="assets/images/logos/senaLogo.svg" style="max-width:100px"></div>
+            </div>
+        </footer>
+        <section id="cc">
+            <div class="container">
+                <div class="d-flex flex-column flex-sm-row"><span class="pr-3"><i class="icon cc"></i></span><span>Este material puede ser distribuido, copiado y exhibido por terceros si se muestra en los créditos. No se puede obtener ningún beneficio comercial y las obras derivadas tienen que estar bajo los mismos términos de la licencia que el trabajo original.</span></div>
+            </div>
+        </section><a class="scroll-to-top-btn">
+            <div class="fa fa-angle-up fa-2x"></div>
+        </a>
+        <script src="assets/js/vendor.js"></script>
+        <script src="js/local.js"></script>
+    </body>
+</html>
