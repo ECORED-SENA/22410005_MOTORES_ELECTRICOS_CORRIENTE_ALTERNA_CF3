@@ -1,6 +1,6 @@
 .page-header {
-    background: rgb(244,93,111);
-    background: linear-gradient(0deg, rgba(244,93,111,1) 0%, rgba(181,40,56,1) 100%); 
+    background: rgb(157,102,26);
+    background: linear-gradient(180deg, rgba(157,102,26,1) 0%, rgba(168,117,37,1) 50%, rgba(204,151,26,1) 100%); 
     position: relative;
     .barra-dots {
         width: 240px;
@@ -14,7 +14,7 @@
         content: '';
         border-style: solid;
         border-width:50px 50px 0px 50px;
-        border-color: #f45d6f transparent transparent transparent;
+        border-color: #CC971A transparent transparent transparent;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -81,6 +81,7 @@
 
     margin: 3rem 0;
     position: relative;
+    color:#7C592D;
 
     h1 {
         font-size: 1.1*$h1-font-size;

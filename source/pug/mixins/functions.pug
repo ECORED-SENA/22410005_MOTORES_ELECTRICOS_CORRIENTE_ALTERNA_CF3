@@ -6,8 +6,8 @@ mixin pageHeader(tituloTema, srcImagen, pagina)
 
             .col-12.col-lg-6
 
-                h3#curso-titulo-componente.curso-subtitulo Aplicación de fundamentos en tecnología de motores eléctricos de corriente alterna, sincrónicos de imanes permanentes.
-                h1#curso-titulo-tema.curso-titulo Principios de funcionamientos y diferencias AM - PMM
+                h3#curso-titulo-componente.sub-title1 Aplicación de fundamentos en tecnología de motores eléctricos de corriente alterna, sincrónicos de imanes permanentes.
+                h1#curso-titulo-tema.curso-titulo Operaciones de motores PMM
 
                 .brand-line-primary
 
@@ -15,17 +15,17 @@ mixin pageHeader(tituloTema, srcImagen, pagina)
 
                     .keywords
                         span.badge.badge-pill.badge-light.mr-2 #Motores
-                        span.badge.badge-pill.badge-light.mr-2 #Conexiones  
-                        span.badge.badge-pill.badge-light.mr-2 #AM
+                        span.badge.badge-pill.badge-light.mr-2 #PMM  
+                        span.badge.badge-pill.badge-light.mr-2 #barreras
 
                     .barra-dots.mt-5
                         img.img-fluid(src='assets/images/header/icon_dots.svg', alt='alt')
 
                 else 
-                    p.curso-descripcion Los motores asíncronos o de inducción son un tipo de motor de corriente alterna en el que la corriente eléctrica del rotor necesaria para producir torsión es inducida por inducción electromagnética del campo magnético de la bobina del estator. Por lo tanto un motor de inducción no requiere una conmutación mecánica aparte de su misma excitación o para todo o parte de la energía transferida del estator al rotor, como en los motores universales, motores DC y motores grandes síncronos. (Motor de inducción, 2016).
+                    p.curso-descripcion Los motores de imanes permanentes son una tecnología revolucionaria que plantea ahorros energéticos importantes, sin embargo existen riesgos eléctricos asociados que deben ser tenidos en cuenta para su correcta operación.
         
                 if pagina == 'home'
-                    a.curso-btn-iniciar.btn.btn-light(href="main.html")
+                    a.curso-btn-iniciar.btn.btn-danger(href="main.html")
                         span Iniciar curso
 
 
@@ -102,7 +102,7 @@ mixin creditosFooter(ruta)
                     h3.footer-subtitulo.mb-4 ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES 
 
                     p.footer-texto.mb-2
-                        | #[strong Ingry Dayanna Bonilla Monzon	 ]<br/>   
+                        | #[strong Maria Camila Garcia Santamaria]<br/>   
                         span.text-small Líder del equipo
 
             .row.mt-5
@@ -110,16 +110,6 @@ mixin creditosFooter(ruta)
                     h4.footer-subtitulo-2.mt-0 
                         .fa.fa-caret-right.mr-2
                         | Contenido Instruccional
-
-                    p.footer-texto.mb-2
-                        | #[strong Gloria Matilde Lee Mejía	 ]<br/>   
-                        span.text-small Responsable del equipo
-
-                    p.footer-texto
-                        span.text-small.text-uppercase Centro de Comercio y Servicios
-                        br
-                        span.text-small Regional Tolima
-
 
                     p.footer-texto.mb-2
                         | #[strong Rafael Nelftalí Lizcano Reyes]<br/>               
@@ -199,7 +189,7 @@ mixin creditosFooter(ruta)
                         | Gestores de repositorio
                     
                     p.footer-texto
-                        | #[strong Brayan Steven Pinto Diaz]<br/>                    
+                        | #[strong Edwin Mauricio Lamprea Hernández]<br/>                    
                         | #[strong Ricardo Alfonso Gonzalez Vargas]<br/>  
     
                         span.text-small Validación de recursos.<br/>
